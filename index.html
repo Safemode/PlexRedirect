@@ -50,7 +50,7 @@
 
         function checkServer() {
             var p = new Ping();
-            var server = document.domain //Try to get it automagically, but you can manually specify this
+            var server = document.domain; //Try to get it automagically, but you can manually specify this
             var timeout = 2000; //Milliseconds
             var body = document.getElementsByTagName("body")[0];
             p.ping(server+":32400", function(data) {
@@ -79,7 +79,7 @@
     <link href="assets/css/main.css" rel="stylesheet">
 
     <!-- Fonts from Google Fonts -->
-	<link href='//fonts.googleapis.com/css?family=Lato:300,400,900' rel='stylesheet' type='text/css'>
+    <link href='//fonts.googleapis.com/css?family=Lato:300,400,900' rel='stylesheet' type='text/css'>
     
   
   </head>
@@ -91,12 +91,9 @@
       <div class="container">
         <div class="navbar-header">
           
-          </button>
-          <a href="http://YOURSERVERURLHERE.com"
+          <a href="http://YOURSERVERURLHERE.com">
           <a class="navbar-brand" href="#"><b>YOUR SERVER NAME HERE</b></a>
-        </div>
         
-          </ul>
         </div><!--/.nav-collapse -->
       </div>
     </div>
@@ -142,7 +139,7 @@
 				<div class="col-lg-6">
 					<h1><br/>
 					<center>YOUR SERVER NAME HERE Status:</h1></center>
-					<center><h4 id="server-status-msg">Checking...</h4></center><br/>
+					<center><h4 id="server-status-msg"><img src="assets/img/puff.svg">   Checking...</h4></center><br/>
 					<br/>
 					<br/>
 					<form class="form-inline" role="form">
